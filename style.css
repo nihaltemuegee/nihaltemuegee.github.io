@@ -378,7 +378,9 @@ a.card:hover h3 { color: var(--accent); }
   border-bottom: 1px solid var(--border);
 }
 
-.pub-title { font-size: 0.98rem; }
+.pub-title { font-size: 0.98rem; color: var(--ink); }
+a.pub-title { color: var(--accent); }
+a.pub-title:hover { text-decoration: underline; }
 .pub-date { color: var(--ink-soft); font-size: 0.85rem; white-space: nowrap; }
 
 /* Skills */
