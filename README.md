@@ -6,9 +6,16 @@ GitHub Pages at a URL that's easy to find by searching her name.
 
 ## Files
 
-- `index.html` — all page content
-- `style.css` — all styling (light/dark mode aware)
+- `index.html` — Home page (landing page with photo, intro, and links to every section)
+- `about.html` — About + skills
+- `experience.html` — Work experience
+- `education.html` — Education
+- `projects.html` — Research & projects
+- `publications.html` — Publications
+- `contact.html` — Contact links
+- `style.css` — all styling, shared by every page (light/dark mode aware)
 - `favicon.svg` — browser-tab icon (a simple "NT" monogram)
+- `assets/` — put a photo here (e.g. `assets/photo.jpg`) and swap it into the `<!-- PHOTO -->` comment in `index.html`'s hero section
 
 ## Preview it locally
 
