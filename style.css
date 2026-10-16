@@ -1,5 +1,5 @@
 :root {
-  --bg: #eef3fa;
+  --bg: #faf7f2;
   --surface: #ffffff;
   --ink: #1a2433;
   --ink-soft: #5b6b82;
@@ -14,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #0f1724;
+    --bg: #15181a;
     --surface: #162032;
     --ink: #eaf0fa;
     --ink-soft: #9fb0c8;
