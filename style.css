@@ -373,6 +373,21 @@ a.card:hover h3 { color: var(--accent); }
   margin-bottom: 0.15rem;
 }
 
+.timeline-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.timeline-heading h3 { margin-bottom: 0; }
+
+.timeline-logo {
+  flex: 0 0 auto;
+  max-height: 24px;
+  width: auto;
+  object-fit: contain;
+}
+
 .timeline-meta {
   color: var(--ink-soft);
   font-size: 0.92rem;
