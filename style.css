@@ -424,25 +424,31 @@ a.card:hover h3 { color: var(--accent); }
 
 .course-list {
   list-style: none;
+  counter-reset: course;
   margin: 0.6rem 0 0;
   padding: 0;
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
+  gap: 0.45rem;
 }
 
 .course-list li {
+  counter-increment: course;
   position: relative;
-  padding-left: 1.1rem;
+  padding-left: 1.6rem;
   font-size: 0.92rem;
   color: var(--ink-soft);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .course-list li::before {
-  content: "–";
+  content: counter(course) ".";
   position: absolute;
   left: 0;
   color: var(--accent);
+  font-weight: 500;
 }
 
 /* Project cards */
