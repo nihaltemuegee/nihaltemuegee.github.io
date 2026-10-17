@@ -422,6 +422,29 @@ a.card:hover h3 { color: var(--accent); }
 
 .tag-list-inline li { font-size: 0.75rem; padding: 0.2rem 0.6rem; }
 
+.course-list {
+  list-style: none;
+  margin: 0.6rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.course-list li {
+  position: relative;
+  padding-left: 1.1rem;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
+}
+
+.course-list li::before {
+  content: "–";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
 /* Project cards */
 
 .card-grid {
