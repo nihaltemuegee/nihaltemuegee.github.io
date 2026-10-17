@@ -434,21 +434,32 @@ a.card:hover h3 { color: var(--accent); }
 
 .course-list li {
   counter-increment: course;
-  position: relative;
-  padding-left: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-size: 0.92rem;
   color: var(--ink-soft);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  min-width: 0;
 }
 
 .course-list li::before {
   content: counter(course) ".";
-  position: absolute;
-  left: 0;
+  flex: 0 0 auto;
   color: var(--accent);
   font-weight: 500;
+}
+
+.course-logo {
+  flex: 0 0 auto;
+  object-fit: contain;
+}
+
+.course-text {
+  flex: 1 1 auto;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Project cards */
