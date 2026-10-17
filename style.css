@@ -422,46 +422,6 @@ a.card:hover h3 { color: var(--accent); }
 
 .tag-list-inline li { font-size: 0.75rem; padding: 0.2rem 0.6rem; }
 
-.course-list {
-  list-style: none;
-  counter-reset: course;
-  margin: 0.6rem 0 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.45rem;
-}
-
-.course-list li {
-  counter-increment: course;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-size: 0.92rem;
-  color: var(--ink-soft);
-  min-width: 0;
-}
-
-.course-list li::before {
-  content: counter(course) ".";
-  flex: 0 0 auto;
-  color: var(--accent);
-  font-weight: 500;
-}
-
-.course-logo {
-  flex: 0 0 auto;
-  object-fit: contain;
-}
-
-.course-text {
-  flex: 1 1 auto;
-  min-width: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 /* Project cards */
 
 .card-grid {
